@@ -20,4 +20,4 @@ jobs:
     steps:
       - name: print hello world and date every month
         id: date
-        run: echo Hello, world! Today is "$(date +'%m-%d-%Y %H:%M:%S')"
+        run: echo Hello, world! Today is "$(date --date='TZ="America/Los_Angeles" +'%m-%d-%Y %H:%M:%S')"
