@@ -19,4 +19,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: print hello world and date every month
-        run: echo Hello, world! Today is "$(date + '%m%d%Y %h:%m:%s')"
+        id: date
+        run: echo Hello, world! Today is "::set-output name=date::$(date +'%Y-%m-%d')"
