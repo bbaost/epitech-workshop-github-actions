@@ -1,0 +1,20 @@
+name: hello world + date
+
+on:
+  issues:
+    types:
+      - opened
+      - edited
+      - closed
+  pull_request:
+    types:
+      - ready_for_review
+  gollum
+  schedule:
+   - cron: '* * * /1 *'
+
+jobs:
+  build:
+    steps:
+      - name: print hello world and date every month
+        run: echo Hello, world! Today is {}-{}-{} {}:{}:{}
