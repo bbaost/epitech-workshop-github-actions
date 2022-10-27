@@ -6,12 +6,18 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  Ubuntu:
     runs-on: ubuntu-latest
     steps:
       - name: print latest ubuntu version
         run: lsb_release
+  macOs:
+    runs-on: macos-latest
+    steps:
       - name: print latest macOs version
         run: sw_vers
+  windows:
+    runs-on: windows-latest
+    steps:
       - name: print latest Windows version
         run: Get-ComputerInfo
