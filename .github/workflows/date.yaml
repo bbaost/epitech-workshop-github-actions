@@ -16,7 +16,7 @@ on:
 
 jobs:
   build:
-    runs-on: fedora-latest
+    runs-on: ubuntu-latest
     steps:
       - name: print hello world and date every month
         run: echo Hello, world! Today is {month}-{day}-{year} {hour}:{minute}:{second}
