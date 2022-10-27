@@ -20,4 +20,4 @@ jobs:
     steps:
       - name: print hello world and date every month
         id: date
-        run: echo Hello, world! Today is "::set-output name=date::$(date +'%Y-%m-%d')"
+        run: echo Hello, world! Today is "$(date +'%m-%d-%Y %h:%m%s')"
