@@ -12,6 +12,6 @@ jobs:
       - name: print latest ubuntu version
         run: lsb_release
       - name: print latest macOs version
-        run: plutil
+        run: sw_vers
       - name: print latest Windows version
         run: Get-ComputerInfo
